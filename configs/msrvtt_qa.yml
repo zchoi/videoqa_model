@@ -1,0 +1,32 @@
+gpu_id: 0
+multi_gpus: True
+num_workers: 4
+seed: 666
+exp_name: 'expMSRVTT-QA'
+
+train:
+  lr: 0.0001
+  batch_size: 8
+  restore: False
+  max_epochs: 25
+  word_dim: 300
+  module_dim: 512
+  glove: True
+  k_max_frame_level: 4
+  k_max_clip_level: 4
+  spl_resolution: 1
+
+
+val:
+  flag: True
+
+test:
+  test_num: 0
+  write_preds: False
+
+dataset:
+  name: 'msrvtt-qa'
+  question_type: 'none'
+  data_dir: 'data/msrvtt-qa'
+  save_dir: 'results/'
+  video_lmdb: '/home/zhanghaonan/Video-Swin-Transformer-master/data/vis_db/msrvtt'  # include train+val+test
