@@ -115,6 +115,7 @@ If you make use of this repository for your research, please cite the following 
   journal={arXiv preprint arXiv:2002.10698},
   year={2020}
 }
+
 ```
 ## Acknowledgement
 - As for motion feature extraction, we adapt ResNeXt-101 model from this [repo](https://github.com/kenshohara/video-classification-3d-cnn-pytorch) to our code. Thank @kenshohara for releasing the code and the pretrained models. 
